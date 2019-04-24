@@ -19,17 +19,5 @@ namespace BigNumber
 
 		BigNumber();
 		BigNumber(std::string arg);
-
-		BigNumber& operator = (BigNumber& arg);
-		BigNumber& operator + (BigNumber arg);
-		BigNumber& operator - (BigNumber arg);
-		BigNumber& operator * (BigNumber arg);
-		BigNumber& operator / (BigNumber arg);
-		BigNumber& operator += (BigNumber arg);
-		BigNumber& operator -= (BigNumber arg);
-		BigNumber& operator *= (BigNumber arg);
-		BigNumber& operator /= (BigNumber arg);
-		BigNumber& operator ++ ();
-		BigNumber& operator -- ();
 	};
 }
