@@ -1,11 +1,14 @@
 ﻿#include "pch.h"
 #include <iostream>
 
+#include "BigNumber.h"
+
 
 int main()
 {
-	int a = 5, b = 3;
-	a = b = 5;
+	BigNumber::BigNumber a = "1", b = "-1", c = "0";
+
+	std::cout << a << b;
 
 	return 0;
 }

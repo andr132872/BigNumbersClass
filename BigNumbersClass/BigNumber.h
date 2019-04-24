@@ -1,6 +1,8 @@
 #pragma once
 
 #include <vector>
+#include <string>
+#include <iostream>
 
 
 typedef char chach_t;
@@ -10,11 +12,11 @@ namespace BigNumber
 {
 	class BigNumber
 	{
-	private:
+	public:
 
 		std::vector<chach_t> number;
 
-		bool negative, zero;
+		bool negative = false, zero = false;
 		
 		void incrementing(std::vector<chach_t>::iterator _it, std::vector<chach_t>::iterator _itBegin);
 		void decrementing(std::vector<chach_t>::iterator _it, std::vector<chach_t>::iterator _itBegin);
@@ -24,7 +26,8 @@ namespace BigNumber
 		BigNumber();
 		BigNumber(std::string arg);
 
-		BigNumber& operator = (BigNumber& arg);
+		BigNumber& operator = (BigNumber arg);
+		BigNumber& operator = (std::string arg);
 		BigNumber& operator + (BigNumber arg);
 		BigNumber& operator - (BigNumber arg);
 		BigNumber& operator * (BigNumber arg);
@@ -37,5 +40,6 @@ namespace BigNumber
 		BigNumber& operator -- ();
 		friend BigNumber& operator ++ (BigNumber& arg);
 		friend BigNumber& operator -- (BigNumber& arg);
+		friend std::ostream& operator << (std::ostream& out, BigNumber arg);
 	};
 }
