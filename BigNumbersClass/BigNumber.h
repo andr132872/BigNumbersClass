@@ -5,11 +5,11 @@
 #include <iostream>
 
 
-typedef char chach_t;
-
-
 namespace BigNumber
 {
+	typedef char chach_t;
+
+
 	class BigNumber
 	{
 	public:
