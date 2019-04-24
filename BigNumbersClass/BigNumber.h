@@ -3,8 +3,15 @@
 #include <vector>
 
 
+
+typedef chach_t char;
+
+
+
 namespace BigNumber
 {
+
+
 	class BigNumber
 	{
 	private:
