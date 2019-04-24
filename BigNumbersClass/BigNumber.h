@@ -31,7 +31,5 @@ namespace BigNumber
 		BigNumber& operator /= (BigNumber arg);
 		BigNumber& operator ++ ();
 		BigNumber& operator -- ();
-		friend BigNumber& operator ++ (BigNumber& arg);
-		friend BigNumber& operator -- (BigNumber& arg);
 	};
 }
