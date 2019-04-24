@@ -23,10 +23,6 @@ namespace BigNumber
 		BigNumber& operator = (BigNumber& arg);
 		BigNumber& operator + (BigNumber arg);
 		BigNumber& operator - (BigNumber arg);
-		BigNumber& operator * (BigNumber arg);
-		BigNumber& operator / (BigNumber arg);
-		BigNumber& operator += (BigNumber arg);
-		BigNumber& operator -= (BigNumber arg);
 
 	};
 }
