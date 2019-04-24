@@ -5,10 +5,6 @@
 
 
 
-typedef chach_t char;
-
-
-
 namespace BigNumber
 {
 
@@ -22,6 +18,7 @@ namespace BigNumber
 		bool negative, zero;
 		
 		void incrementing(std::vector<uint16_t>::iterator _it, std::vector<uint16_t>::iterator _itBegin);
+		void decrementing(std::vector<uint16_t>::iterator _it, std::vector<uint16_t>::iterator _itBegin);
 
 	public:
 
